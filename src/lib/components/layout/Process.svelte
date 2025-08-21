@@ -169,13 +169,12 @@
 		<header class="mt-7 mb-12 hidden lg:block">
 			<p class="text-sm tracking-wide uppercase">• &nbsp; &nbsp; Our Process</p>
 		</header>
-		<ul class="flex flex-row gap-4 lg:flex-col lg:gap-8" role="tablist">
+		<ul class="flex flex-row gap-4 lg:flex-col lg:gap-8">
 			{#each processItems as item}
 				<li>
 					<Button
-						role="tab"
-						aria-selected={item.active}
-						aria-controls="process-content"
+						aria-pressed={item.active}
+						aria-describedby="process-content"
 						class={item.active ? 'active' : ''}
 						variant="primary"
 						size={item.size}

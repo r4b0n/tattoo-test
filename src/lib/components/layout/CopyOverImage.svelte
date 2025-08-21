@@ -8,10 +8,7 @@
 	aria-label="Discover our work areas"
 >
 	<article class="grid place-items-center" aria-labelledby="discover-heading">
-		<div
-			class="col-start-1 row-start-1 h-auto w-full overflow-hidden"
-			aria-labelledby="discover-heading"
-		>
+		<div class="col-start-1 row-start-1 h-auto w-full overflow-hidden">
 			<picture>
 				<source srcset={imgDiscover} type="image/webp" />
 				<img

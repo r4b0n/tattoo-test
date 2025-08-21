@@ -57,9 +57,16 @@
 
 	// Dynamic style for small size
 	$: buttonStyle = size === 'sm' ? 'font-size: var(--font-size-fluid-xs);' : '';
+
+	// Filter out problematic ARIA attributes
+	$: filteredProps = Object.fromEntries(
+		Object.entries($$restProps).filter(([key]) => 
+			!['role', 'aria-selected', 'aria-controls'].includes(key)
+		)
+	);
 </script>
 
-<button class={buttonClasses} style={buttonStyle} {type} {disabled} on:click {...$$restProps}>
+<button class={buttonClasses} style={buttonStyle} {type} {disabled} on:click {...filteredProps}>
 	<slot />
 	{#if variant === 'gsd'}
 		<svg
