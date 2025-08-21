@@ -20,16 +20,16 @@
 	--font-size-fluid-h1: clamp(2.7rem, 8vw, 6.5rem);
 	--font-size-fluid-h2: clamp(2.7rem, 7vw, 5.5rem);
 	--font-size-fluid-h2-secondary: clamp(2.7rem, 7vw, 5.2rem);
-	--font-size-fluid-h1-gsd: clamp(2.7rem, 7vw, 4rem);
+	--font-size-fluid-h1-gsd: clamp(2.2rem, 7vw, 4rem);
 
 	/* Line Heights */
 	--line-height-fluid-h1: clamp(2.4rem, 7vw, 5.7rem);
 	--line-height-fluid-h2: clamp(2.2rem, 6vw, 4.2rem);
 	--line-height-fluid-h2-secondary: clamp(2.2rem, 6vw, 4rem);
-	--line-height-fluid-h1-gsd: clamp(3.1rem, 7vw, 4.5rem);
+	--line-height-fluid-h1-gsd: clamp(2.2rem, 7vw, 4.5rem);
 
 	/* Letter Spacing */
-	--letter-spacing-normal: -0.002em;
+	--letter-spacing-normal: -0.035em;
 	--letter-spacing-tight: -0.02em;
 
 	/* Max Width Scale */
@@ -70,7 +70,7 @@ body {
 
 .text-fluid-h1-gsd {
 	font-size: var(--font-size-fluid-h1-gsd);
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-normal);
 	line-height: var(--line-height-fluid-h1-gsd);
 	letter-spacing: var(--letter-spacing-normal);
 }
