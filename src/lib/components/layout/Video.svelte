@@ -1,6 +1,17 @@
 <script>
+	import { onMount } from 'svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import imgVideoBg from '$lib/assets/img_video_bg.webp';
+
+	onMount(() => {
+		// Preload the critical image
+		const link = document.createElement('link');
+		link.rel = 'preload';
+		link.as = 'image';
+		link.href = imgVideoBg;
+		link.type = 'image/webp';
+		document.head.appendChild(link);
+	});
 </script>
 
 <div class="relative mx-auto mt-8 w-full max-w-[var(--max-width-container-custom)] lg:mt-16">
@@ -23,6 +34,7 @@
 				class="h-auto w-full object-cover"
 				loading="eager"
 				decoding="async"
+				fetchpriority="high"
 			/>
 		</picture>
 		<div class="z-50 col-start-1 row-start-1 flex items-center justify-center">
