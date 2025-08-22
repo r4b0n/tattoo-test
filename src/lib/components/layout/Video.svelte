@@ -25,7 +25,6 @@
 		<picture
 			class="col-start-1 row-start-1 h-auto w-full"
 			aria-label="Video background showing data-driven performance"
-			role="img"
 		>
 			<source srcset={imgVideoBg} type="image/webp" />
 			<img

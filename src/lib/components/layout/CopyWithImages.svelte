@@ -55,7 +55,11 @@
 				{items[0].description}
 			</p>
 		</div>
-		<div class="col-start-1 row-start-1 flex lg:col-start-2 lg:row-start-1" role="img" aria-labelledby={items[0].aria.headingId}>
+		<div
+			class="col-start-1 row-start-1 flex lg:col-start-2 lg:row-start-1"
+			role="img"
+			aria-labelledby={items[0].aria.headingId}
+		>
 			<picture class="w-full">
 				<source srcset={items[0].image01} type="image/webp" />
 				<img
@@ -64,7 +68,6 @@
 					class="h-full w-full object-cover"
 					loading="eager"
 					decoding="async"
-					role="presentation"
 				/>
 			</picture>
 		</div>
@@ -81,7 +84,6 @@
 					class="h-full w-full object-cover"
 					loading="eager"
 					decoding="async"
-					role="presentation"
 				/>
 			</picture>
 		</div>
@@ -90,7 +92,11 @@
 		class="relative mt-4 grid w-full grid-cols-1 grid-rows-[auto_auto_auto] gap-0 lg:mt-0 lg:grid-cols-[49%_51%] lg:grid-rows-[auto_auto] lg:gap-8"
 		aria-labelledby={items[1].aria.headingId}
 	>
-		<div class="col-start-1 row-start-1 flex flex-col lg:col-start-1 lg:row-span-2" role="img" aria-labelledby={items[1].aria.headingId}>
+		<div
+			class="col-start-1 row-start-1 flex flex-col lg:col-start-1 lg:row-span-2"
+			role="img"
+			aria-labelledby={items[1].aria.headingId}
+		>
 			<picture class="w-full lg:mt-[-4.2rem] lg:w-[85%]">
 				<source srcset={items[1].image01} type="image/webp" />
 				<img
@@ -99,7 +105,6 @@
 					class="h-full w-full object-cover"
 					loading="eager"
 					decoding="async"
-					role="presentation"
 				/>
 			</picture>
 		</div>
@@ -107,10 +112,16 @@
 			class="col-start-1 row-start-2 mt-10 mb-10 flex flex-col items-start justify-center lg:col-start-2 lg:row-start-1 lg:mt-28 lg:mb-0"
 			role="main"
 		>
-			<h1 id={items[1].aria.headingId} class="text-fluid-h1-gsd font-gloock text-blue">{@html items[1].title}</h1>
+			<h1 id={items[1].aria.headingId} class="text-fluid-h1-gsd font-gloock text-blue">
+				{@html items[1].title}
+			</h1>
 			<p class="mt-6 lg:mt-8" aria-describedby={items[1].aria.headingId}>{items[1].description}</p>
 		</div>
-		<div class="col-start-1 row-start-3 flex lg:col-start-2 lg:row-start-2" role="img" aria-label={items[1].aria.secondaryImageLabel}>
+		<div
+			class="col-start-1 row-start-3 flex lg:col-start-2 lg:row-start-2"
+			role="img"
+			aria-label={items[1].aria.secondaryImageLabel}
+		>
 			<picture class="w-full lg:mt-[4rem]">
 				<source srcset={items[1].image02} type="image/webp" />
 				<img
@@ -119,7 +130,6 @@
 					class="h-full w-full object-cover"
 					loading="eager"
 					decoding="async"
-					role="presentation"
 				/>
 			</picture>
 		</div>

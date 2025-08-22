@@ -17,7 +17,6 @@
 					class="ml-[-15%] h-full w-full min-w-[1200px] object-cover md:ml-0 md:min-w-[1400px]"
 					loading="eager"
 					decoding="async"
-					role="presentation"
 				/>
 			</picture>
 		</div>
